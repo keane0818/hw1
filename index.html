@@ -8,15 +8,57 @@
 		table td{text-align: center;}
 		img{border-radius: 100%; width: 300px;height: 300px}
 		#head_img {border-radius: 20px; width: 1024px;height: 300px}
+		body{margin: 0;}
+		#main_div{margin: 0 auto; width: 90%}
+		/* The navigation bar */
+		.navbar {
+		  overflow: hidden;
+		  background-color: #333;
+		  position: fixed; /* Set the navbar to fixed position */
+		  top: 0; /* Position the navbar at the top of the page */
+		  width: 100%; /* Full width */
+		}
+
+		/* Links inside the navbar */
+		.navbar a {
+		  float: left;
+		  display: block;
+		  color: #f2f2f2;
+		  text-align: center;
+		  padding: 14px 16px;
+		  text-decoration: none;
+		}
+
+		/* Change background on mouse-over */
+		.navbar a:hover {
+		  background: #ddd;
+		  color: black;
+		}
+
+		/* Main content */
+		.main {
+		  margin-top: 30px; /* Add a top margin to avoid content overlay */
+		}
+
 	</style>
 </head>
 <body>
+	<div class="navbar">
+ 	<a href="#tc0">首頁</a>
+ 	<a href="#tc1">台中國家歌劇院</a>
+  	<a href="#tc2">臺中州廳</a>
+  	<a href="#tc3">審計新村</a>
+	</div>
+
+<div class="main">
+  <p>Some text some text some text some text..</p>
+</div>
 	<table width="1024px">
 		
-
+		<div id="main_div"></div>
 		
 		<tr >
-			<td colspan="2">
+			<td id ="tc0" colspan="2">
 				<img id="head_img"width ="1024px" hright="300px"src="00taichung.jpeg" alt="">
 			</td>
 			<td></td>
@@ -35,7 +77,7 @@
 		</tr>
 		<tr>
 			<td >
-				<img src="01.jpeg" alt="">
+				<img id="tc1"src="01.jpeg" alt="">
 				
 			</td>
 			<td >
@@ -59,19 +101,26 @@
 				</font>
 			</td>
 			<td>
-				<img src="02.jpeg" alt="">
+				<img id="tc2" src="02.jpeg" alt="">
 			</td>
 		</tr>
 		<tr>
 			<td>
-				<img src="03.jpeg" alt="">
+				<img id="tc3" src="03.jpeg" alt="">
 			</td>
 			<td >
-				<h2>審計新村</h2>
+				<font size="5">
+					臺中州廳
+				</font>
+				<br>
 				<font>
 					審計新村位於台中市西區，原為臺灣省政府審計處員工宿舍，在凍省之後成了閒置空間荒廢多年，近年配合台中市政府勞工局「摘星青年、築夢台
 				</font>
 			</td>
+		</tr>
+		<tr>
+			<td colspan="2"><iframe src="https://www.google.com/maps/d/embed?mid=1TCNYG6vpPq93k-xIGD6AOk6YrAqhQGp3&ehbc=2E312F" width="640" height="480"></iframe></td>
+			<td></td>
 		</tr>
 		<tr>
 			<td colspan="2" style="text-align: center;background-color: black;color:white">
